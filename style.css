@@ -1,0 +1,330 @@
+@import url("fonts/stylesheet.css");
+
+body {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    background-color: #101010;
+}
+
+header {
+    height: 112px;
+    background-color: #020202;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+a.logo img {
+    width: 53px;
+    height: 54px;
+    padding-left: 9.6%;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+.left-menu {
+    width: 2%;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    margin-left: 3.26%;
+}
+
+.left-menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 24px;
+    margin-right: auto;
+}
+
+.left-menu a:hover {
+    color: white;
+}
+
+.right-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 2.78%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.right-menu .search,
+.right-menu .user {
+    width: 48px;
+    height: 48px;
+    margin-right: 24px;
+    position: relative;
+}
+
+.right-menu-block {
+    display: flex;
+    margin-left: 38.19%;
+}
+
+.left-menu-block {
+    font-family: 'Helvetica Now Display', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    display: flex;
+    margin-left: 9.72%;
+}
+
+.right-menu .image-button {
+    width: 13.54%;
+    height: 52px;
+    background-color: #020202;
+    background-image: url('img/launcher.png');
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.right-menu .search,
+.right-menu .user,
+.right-menu .image-button {
+    margin-right: 24px;
+}
+
+.right-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.right-menu a:hover {
+    color: white;
+}
+
+
+.hero {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+h1,
+h2 {
+    font-family: 'Helvetica Now Display', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 72px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: white;
+    margin-left: 9.72%;
+}
+
+.platforms {
+    display: flex;
+    align-items: center;
+}
+
+.platforms h1 {
+    margin-right: 20px;
+}
+
+.platform-list {
+    list-style: none;
+    padding: 0;
+    margin-left: 13.89%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.platform-item {
+    margin-right: 1.11%;
+}
+
+.slider {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.slide img {
+    width: 260px;
+    height: 315.85px;
+    margin-right: 40px;
+    transition: transform 0.5s ease;
+}
+
+.slide:last-child img {
+    margin-right: 0;
+}
+
+.button-vertodos {
+    width: 20%;
+    height: 63px;
+    background-color: #020202;
+    background-image: url('img/vertodos.png');
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    margin: 5.21% auto 0;
+    display: block;
+}
+
+.news-block {
+    display: flex;
+    width: 80%;
+    align-items: flex-start;
+}
+
+.main-block {
+    margin-right: 2.78%;
+    margin-left: 9.72%;
+}
+
+.right-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.second,
+.third {
+    width: 50%;
+}
+
+.news-item img {
+    height: auto;
+}
+
+.main-block h1 {
+    font-family: 'Helvetica Now Display', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-left: 0;
+}
+
+.main-block p {
+    font-family: 'Helvetica Now Display', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: #797979;
+}
+
+.second h2,
+.third h2 {
+    font-family: 'Helvetica Now Display', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-left: 0;
+    margin-top: 8px;
+}
+
+.second p,
+.third p {
+    font-family: 'Helvetica Now Display', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: #797979;
+    margin-left: 0;
+    margin-top: 8px;
+}
+
+.rockstar_launcher {
+    padding-top: 112px;
+    align-items: center;
+    padding-bottom: 95px;
+}
+
+.rockstar_launcher img {
+    padding-left: 9.7%;
+    width: 70%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.footer-block {
+    width: 100%;
+    height: 238px;
+    background-color: #020202;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.78%;
+}
+
+.social-item img {
+    width: 24px;
+    height: 24px;
+    margin-left: 32px;
+}
+
+.rockstar-logo-footer {
+    width: 60px;
+    height: 55.25px;
+    padding-left: 9.7%;
+}
+
+.footer-list {
+    list-style-type: none;
+    display: flex;
+    margin-left: 16.6%;
+    padding: 0;
+}
+
+.footer-item {
+    margin-left: 2.22%;
+}
+
+.social-list {
+    list-style-type: none;
+    display: flex;
+    margin-right: 9.7%;
+    padding: 0;
+}
+
+.footer-list li a {
+    text-decoration: none;
+    font-family: 'Helvetica Now Display', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: #B1B1B1;
+}
+
+.contacts-rights p {
+    font-family: 'Helvetica Now Display', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: -0.011em;
+    text-align: left;
+    color: #B1B1B1;
+    margin-left: 16.6%;
+}

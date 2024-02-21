@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockstar Games</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .slide {
+            flex: 0 0 25%;
+            transition: transform 0.5s ease;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .button-vertodos {
+            width: 260px;
+            height: 63px;
+            background-color: #020202;
+            background-image: url('img/vertodos.png');
+            background-size: cover;
+            border: none;
+            cursor: pointer;
+            margin: 64px auto 0;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left-menu-block">
+                <a href="#" class="logo"><img src="img/logo.png" alt="Логотип"></a>
+                <ul class="left-menu">
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Loja</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                </ul>
+            </div>
+            <div class="right-menu-block">
+                <ul class="right-menu">
+                    <li><button class="image-button"></button></li>
+                    <li><a href="#"><img src="img/search.png" class="search"></a></li>
+                    <li><a href="#"><img src="img/user.png" class="user"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="img/banner.png" class="banner" alt="banner">
+        </section>
+        <section class="platforms">
+            <h1>Jogos em Destaque</h1>
+            <ul class="platform-list">
+                <li class="platform-item">
+                    <a href="#">
+                        <img src="img/pc.png" alt="Изображение ПК">
+                    </a>
+                </li>
+                <li class="platform-item"><a href="#">
+                        <img src="img/console.png" alt="Изображение консоли">
+                    </a></li>
+                <li class="platform-item"><a href="#">
+                        <img src="img/disp.png" alt="Изображение дисплея">
+                    </a></li>
+            </ul>
+        </section>
+        <section class="slider">
+            <div class="slide"><img src="img/gta5.png" alt="Slide 1"></div>
+            <div class="slide"><img src="img/gtaonline.png" alt="Slide 2"></div>
+            <div class="slide"><img src="img/rdr2.png" alt="Slide 3"></div>
+            <div class="slide"><img src="img/rdronline.png" alt="Slide 4"></div>
+        </section>
+        <button class="button-vertodos"></button>
+        <section class="news">
+            <h2>Últimas Notícias</h2>
+            <div class="news-block">
+                <div class="main-block">
+                    <img src="img/gta6.png" alt="gta6">
+                    <h1>Grand Theft Auto VI - Veja o 1º trailer agora</h1>
+                    <p>Rockstar Games 5 de dezembro de 2023</p>
+                </div>
+                <div class="right-block">
+                    <div class="second">
+                        <img src="img/palms.png" alt="palms">
+                        <h2>1º Trailer. Terça-feira, 5 de Dezembro. 9h Et.</h2>
+                        <p>Rockstar Games 1 de dezembro de 2023</p>
+                    </div>
+                    <div class="third">
+                        <img src="img/car.png" alt="car">
+                        <h2>Nova atualização de GTA Online chegando em dezembro</h2>
+                        <p>GTA Online 30 de novembro de 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rockstar_launcher">
+            <img src="img/launcher_banner.png" alt="rockstar_launcher">
+        </section>
+    </main>
+    <footer>
+        <section class="footer-block">
+            <img src="img/logo_footer.png" class="rockstar-logo-footer" alt="logo footer">
+            <div class="contacts-rights">
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="#">CONTATO</a></li>
+                    <li class="footer-item"><a href="#">SOBRE</a></li>
+                    <li class="footer-item"><a href="#">SUPORTE</a></li>
+                    <li class="footer-item"><a href="#">EMPREGOS</a></li>
+                </ul>
+                <p class="rights">©2023 Rockstar Games, Inc. - YWR Studio. </p>
+            </div>
+            <ul class="social-list">
+                <li class="social-item">
+                    <a href="#">
+                        <img src="img/twitch.png">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="#">
+                        <img src="img/instagram.png">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="#">
+                        <img src="img/twitter.png">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="#">
+                        <img src="img/youtube.png">
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="#">
+                        <img src="img/facebook.png">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+
+    <script src="slider.js"></script>
+</body>
+
+</html>
