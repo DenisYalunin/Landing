@@ -6,60 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rockstar Games</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .slider {
-            width: 100%;
-            overflow: hidden;
-            display: flex;
-        }
-
-        .slide {
-            flex: 0 0 25%;
-            transition: transform 0.5s ease;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-        }
-
-        .button-vertodos {
-            width: 260px;
-            height: 63px;
-            background-color: #020202;
-            background-image: url('img/vertodos.png');
-            background-size: cover;
-            border: none;
-            cursor: pointer;
-            margin: 64px auto 0;
-            display: block;
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="left-menu-block">
-                <a href="#" class="logo"><img src="img/logo.png" alt="Логотип"></a>
-                <ul class="left-menu">
-                    <li><a href="#">Jogos</a></li>
-                    <li><a href="#">Loja</a></li>
-                    <li><a href="#">Ajuda</a></li>
-                </ul>
-            </div>
-            <div class="right-menu-block">
-                <ul class="right-menu">
-                    <li><button class="image-button"></button></li>
-                    <li><a href="#"><img src="img/search.png" class="search"></a></li>
-                    <li><a href="#"><img src="img/user.png" class="user"></a></li>
-                </ul>
-            </div>
-        </nav>
+        <div class="header-container">
+            <ul class="left-menu">
+                <li><a href="#" class="logo"><img src="img/logo.png" alt="Логотип"></a></li>
+                <li class="left-item"><a href="#">Jogos</a></li>
+                <li class="left-item"><a href="#">Loja</a></li>
+                <li class="left-item"><a href="#">Ajuda</a></li>
+            </ul>
+            <ul class="right-menu">
+                <li><button class="baixe-button"></button></li>
+                <li><a href="#"><img src="img/search.png" class="search"></a></li>
+                <li><a href="#"><img src="img/user.png" class="user"></a></li>
+            </ul>
+        </div>
     </header>
+
     <main>
         <section class="hero">
-            <img src="img/banner.png" class="banner" alt="banner">
+            <img src="img/banner.png" alt="banner">
         </section>
         <section class="platforms">
             <h1>Jogos em Destaque</h1>
@@ -78,10 +46,16 @@
             </ul>
         </section>
         <section class="slider">
-            <div class="slide"><img src="img/gta5.png" alt="Slide 1"></div>
-            <div class="slide"><img src="img/gtaonline.png" alt="Slide 2"></div>
-            <div class="slide"><img src="img/rdr2.png" alt="Slide 3"></div>
-            <div class="slide"><img src="img/rdronline.png" alt="Slide 4"></div>
+            <div class="slides">
+                <div class="slide"><img src="img/gta5.png" alt="Slide 1"></div>
+                <div class="slide"><img src="img/gtaonline.png" alt="Slide 2"></div>
+                <div class="slide"><img src="img/rdr2.png" alt="Slide 3"></div>
+                <div class="slide"><img src="img/rdronline.png" alt="Slide 4"></div>
+                <div class="slide"><img src="img/gta5.png" alt="Slide 1"></div>
+                <div class="slide"><img src="img/gtaonline.png" alt="Slide 2"></div>
+                <div class="slide"><img src="img/rdr2.png" alt="Slide 3"></div>
+                <div class="slide"><img src="img/rdronline.png" alt="Slide 4"></div>
+            </div>
         </section>
         <button class="button-vertodos"></button>
         <section class="news">
@@ -152,7 +126,7 @@
         </section>
     </footer>
 
-    <script src="slider.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

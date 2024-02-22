@@ -1,28 +1,28 @@
-let slideIndex = 0;
-const slideWidth = document.querySelector('.slide').clientWidth;
 const slider = document.querySelector('.slider');
+const slides = document.querySelector('.slides');
+const slideWidth = slides.firstElementChild.offsetWidth;
+let slideIndex = 0;
 
-function moveSlide(direction) {
-    const slides = document.querySelectorAll('.slide');
+function moveSlide() {
+    slideIndex++;
 
-    if (direction === -1 && slideIndex > 0) {
-        slideIndex--;
-    } else if (direction === 1 && slideIndex < slides.length - 1) {
-        slideIndex++;
-    }
+    // Перемещаем слайды
+    const offset = -slideIndex * slideWidth;
+    slider.querySelector('.slides').style.transition = 'transform 0.5s ease';
+    slider.querySelector('.slides').style.transform = `translateX(${offset}px)`;
 
-    slider.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
-}
-
-function autoScroll() {
-    setInterval(() => {
-        if (slideIndex < slider.children.length - 1) {
-            slideIndex++;
-        } else {
+    // Если достигаем конца, возвращаемся к первому слайду без анимации
+    if (slideIndex === slides.children.length - 1) {
+        setTimeout(() => {
+            slider.querySelector('.slides').style.transition = 'none';
             slideIndex = 0;
-        }
-        slider.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
-    }, 2000);
+            slider.querySelector('.slides').style.transform = `translateX(0)`;
+            setTimeout(() => {
+                slider.querySelector('.slides').style.transition = '';
+            }, 10);
+        }, 500);
+    }
 }
 
-autoScroll(); // Запуск автоматической прокрутки при загрузке страницы
+// Запускаем вечный цикл прокрутки слайдов
+setInterval(moveSlide, 2000);

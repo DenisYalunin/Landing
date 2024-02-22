@@ -1,109 +1,85 @@
 @import url("fonts/stylesheet.css");
 
 body {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.011em;
-    text-align: left;
+    width: 100%;
     background-color: #101010;
 }
 
 header {
     height: 112px;
     background-color: #020202;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
+    list-style-type: none;
+    margin-right: auto;
+    margin-left: 9.6%
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: 9.6%
 }
 
 a.logo img {
     width: 53px;
     height: 54px;
-    padding-left: 9.6%;
+    margin-right: 20px;
 }
 
-header nav {
-    display: flex;
-    align-items: center;
-}
-
-.left-menu {
-    width: 2%;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    margin-left: 3.26%;
+.left-item {
+    margin-left: 24px;
 }
 
 .left-menu a {
     color: white;
     text-decoration: none;
-    margin-left: 24px;
-    margin-right: auto;
 }
 
 .left-menu a:hover {
     color: white;
 }
 
-.right-menu {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 2.78%;
-    padding-top: 30px;
-    padding-bottom: 30px;
+.baixe-button {
+    width: 193px;
+    height: 52px;
+    background-image: url('img/launcher.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #020202;
+    border: none;
+    cursor: pointer;
 }
 
-.right-menu .search,
 .right-menu .user {
     width: 48px;
     height: 48px;
-    margin-right: 24px;
-    position: relative;
 }
 
-.right-menu-block {
-    display: flex;
-    margin-left: 38.19%;
-}
-
-.left-menu-block {
-    font-family: 'Helvetica Now Display', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.011em;
-    text-align: left;
-    display: flex;
-    margin-left: 9.72%;
-}
-
-.right-menu .image-button {
-    width: 13.54%;
-    height: 52px;
-    background-color: #020202;
-    background-image: url('img/launcher.png');
-    background-size: cover;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.right-menu .search,
-.right-menu .user,
-.right-menu .image-button {
+.right-menu .search {
+    width: 48px;
+    height: 48px;
+    margin-left: 40px;
     margin-right: 24px;
 }
 
 .right-menu a {
     color: white;
     text-decoration: none;
+    margin-left: 24px;
+    /* Отступ между элементами */
 }
 
 .right-menu a:hover {
@@ -111,7 +87,7 @@ header nav {
 }
 
 
-.hero {
+.hero img {
     width: 100%;
     text-align: center;
     padding-bottom: 80px;
@@ -135,61 +111,69 @@ h2 {
 }
 
 .platforms h1 {
-    margin-right: 20px;
+    margin-left: 17.2%;
 }
 
 .platform-list {
     list-style: none;
     padding: 0;
-    margin-left: 13.89%;
+    margin-left: 20%;
     display: flex;
     justify-content: flex-end;
 }
 
 .platform-item {
-    margin-right: 1.11%;
+    margin-right: 3%;
 }
 
 .slider {
-    margin-left: 20px;
-    margin-right: 20px;
-    display: flex;
-    justify-content: center;
+    width: 67%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
 }
 
-
-.slide img {
-    width: 260px;
-    height: 315.85px;
-    margin-right: 40px;
+.slides {
+    display: flex;
     transition: transform 0.5s ease;
 }
 
-.slide:last-child img {
-    margin-right: 0;
+.slide {
+    flex: 0 0 calc(100% / 4);
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
 }
 
 .button-vertodos {
-    width: 20%;
+    width: 260px;
     height: 63px;
     background-color: #020202;
     background-image: url('img/vertodos.png');
     background-size: cover;
     border: none;
     cursor: pointer;
-    margin: 5.21% auto 0;
+    margin: 64px auto 0;
     display: block;
 }
 
+.news {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
 .news-block {
     display: flex;
-    width: 80%;
-    align-items: flex-start;
+    justify-content: center;
 }
 
 .main-block {
     margin-right: 2.78%;
-    margin-left: 9.72%;
 }
 
 .right-block {
@@ -255,16 +239,17 @@ h2 {
 }
 
 .rockstar_launcher {
-    padding-top: 112px;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    padding-top: 112px;
     padding-bottom: 95px;
 }
 
-.rockstar_launcher img {
-    padding-left: 9.7%;
-    width: 70%;
-    max-width: 100%;
-    max-height: 100%;
+
+.rockstar_launcher {
+    width: 100%;
+    margin-left: -2%;
 }
 
 .footer-block {
@@ -297,13 +282,17 @@ h2 {
 }
 
 .footer-item {
-    margin-left: 2.22%;
+    margin-left: 4%;
+}
+
+.footer-item:first-child {
+    margin-left: 0;
 }
 
 .social-list {
     list-style-type: none;
     display: flex;
-    margin-right: 9.7%;
+    margin-right: 16.8%;
     padding: 0;
 }
 
